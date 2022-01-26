@@ -8,8 +8,7 @@ const FormComp=() =>{
         e.preventDefault();
         taskList.push(`${task}`);
         updateTask(e.target.value);   
-        updateTask('');
-        console.log(typeof(taskList));
+        updateTask(''); 
     }}>
         <label htmlFor="task">Enter Task:</label>
         <input type="text" value={task} onChange={(e)=>{updateTask(e.target.value); }} />               
